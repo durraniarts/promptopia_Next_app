@@ -21,5 +21,7 @@ export const connectToDB = async () => {
     console.log("MOngoDB is connected");
   } catch (error) {
     console.log(error);
+  } finally {
+    connectToDB();
   }
 };
