@@ -22,6 +22,6 @@ export const connectToDB = async () => {
   } catch (error) {
     console.log(error);
   } finally {
-    connectToDB();
+    await connectToDB();
   }
 };
